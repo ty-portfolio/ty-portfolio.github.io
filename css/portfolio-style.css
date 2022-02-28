@@ -1,0 +1,8 @@
+nav > a > img {
+    width: 32px;
+    height: 32px;
+}
+
+nav > a {
+    font-weight: bold;
+}
