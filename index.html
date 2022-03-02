@@ -13,86 +13,86 @@
         <link href="css/portfolio-style.css" rel="stylesheet">
     </head>
     <body class="background-gradient">
-        <!-- Responsive Navbar -->
-        <div class="container pb-4">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="index.html" class="navbar-brand fw-bold">
-                    <img src="images/code-solid.svg" alt="Portfolio Logo" class="d-inline-block">
-                    Tydarius Young
-                </a>
+        <header>
+            <!-- Responsive Navbar -->
+            <div class="container pb-4">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="index.html" class="navbar-brand fw-bold">
+                        <img src="images/code-solid.svg" alt="Portfolio Logo" class="d-inline-block">
+                        Tydarius Young
+                    </a>
 
-                <button 
-                    class="navbar-toggler secondary-color" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#mobile-menu-toggler"
-                    aria-controls="mobile-menu-toggler" aria-expanded="false" aria-label="Toggle Navigation Menu"
-                >
-                    Menu
-                    <span class="navbar-toggler-icon"></span>
+                    <button 
+                        class="navbar-toggler secondary-color" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mobile-menu-toggler"
+                        aria-controls="mobile-menu-toggler" aria-expanded="false" aria-label="Toggle Navigation Menu"
+                    >
+                        Menu
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mobile-menu-toggler">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li><a class="nav-link active" href="index.html">About</a></li>
+                            <li><a class="nav-link" href="#">Skills</a></li>
+                            <li><a class="nav-link" href="#">Experience</a></li>
+                            <li><a class="nav-link" href="#">Projects</a></li>
+                            <li><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Page Heading -->
+            <h1 class="text-center" id="page-heading">I Am Tydarius Young.</h1>
+        </header>
+        
+        <main>
+            <!-- Image Carousel -->
+            <div id="image-carousel" class="carousel slide px-5" data-bs-ride="carousel" data-bs-interval="false">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="RIT Graduation Picture (1 of 3)"></button>
+                    <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="1" aria-label="Picture at Rochester Lilac Festival (2 of 3)"></button>
+                    <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="2" aria-label="Professional Profile Picture (3 of 3)"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="images/carousel-grad-pic.jpg" class="d-block mx-auto img-thumbnail" alt="RIT Graduation Picture (1 of 3)"
+                            data-toggle="tooltip" title="RIT Graduation Picture (1 of 3)"
+                        >
+                    </div>
+                    <div class="carousel-item">
+                        <img 
+                            src="images/carousel-lilac-festival.jpg" class="d-block mx-auto img-thumbnail" alt="Picture at Rochester Lilac Festival (2 of 3)"
+                            data-toggle="tooltip" title="Picture at Rochester Lilac Festival (2 of 3)"
+                        >
+                    </div>
+                    <div class="carousel-item">
+                        <img 
+                            src="images/carousel-profile-pic.jpg" class="d-block mx-auto img-thumbnail" alt="Professional Profile Picture (3 of 3)"
+                            data-toggle="tooltip" title="Professional Profile Picture (3 of 3)"
+                        >
+                    </div>
+                </div>
+
+                <!-- Carousel Previous/ Next Buttons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="mobile-menu-toggler">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li><a class="nav-link active" href="index.html">About</a></li>
-                        <li><a class="nav-link" href="#">Skills</a></li>
-                        <li><a class="nav-link" href="#">Experience</a></li>
-                        <li><a class="nav-link" href="#">Projects</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Page Heading -->
-        <h1 class="text-center">I Am Tydarius Young.</h1>
-
-        <!-- Image Carousel -->
-        <div id="image-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Professional Profile Picture (1 of 2)"></button>
-                <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="1" aria-label="RIT Graduation Picture (2 of 2)"></button>
-                <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="2" aria-label="Picture at Rochester Lilac Festival (3 of 3)"></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <!-- Carousel Images -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img 
-                        src="images/carousel-profile-pic.jpg" class="d-block mx-auto img-thumbnail" alt="Professional Profile Picture (1 of 3)"
-                        data-toggle="tooltip" title="Professional Profile Picture (1 of 3)" onclick="this.tooltip('show');"
-                    >
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="images/carousel-grad-pic.jpg" class="d-block mx-auto img-thumbnail" alt="RIT Graduation Picture (2 of 3)"
-                        data-toggle="tooltip" title="RIT Graduation Picture (2 of 3)"
-                    >
-                </div>
-                <div class="carousel-item">
-                    <img 
-                        src="images/carousel-lilac-festival.jpg" class="d-block mx-auto img-thumbnail" alt="Picture at Rochester Lilac Festival (3 of 3)"
-                        data-toggle="tooltip" title="Picture at Rochester Lilac Festival (3 of 3)"
-                    >
-                </div>
-            </div>
-
-            <!-- Carousel Previous/ Next Buttons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <p class="p-4">
-            <strong>I am Tydarius Young.</strong> I am a Software Engineer.
-        </p>
-
-        <script>
-
-        </script>
+            <p class="py-4 px-5 fs-5">
+                <strong>I am Tydarius Young.</strong> I am a Software Engineer.
+            </p>
+        </main>
     </body>
 </html>
