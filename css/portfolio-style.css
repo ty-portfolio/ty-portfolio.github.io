@@ -1,14 +1,30 @@
 html {
-    background: rgb(57, 150, 212);
+    background: rgb(55, 150, 210);
 }
 
 .background-gradient {
-    background: rgb(57, 150, 212);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgb(109, 214, 250), rgb(57, 150, 212));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(109, 214, 250), rgb(57, 150, 212)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(55, 150, 210);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgb(105, 215, 250), rgb(55, 150, 210));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(105, 215, 250), rgb(55, 150, 210)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav > a > img {
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+    width: 1.875rem !important;
+    height: 1.875rem !important;
+}
+
+ul.skills-list {
+    list-style-type: none;
+}
+
+ul.skills-list > li::before {
+    content: '';
+    display: inline-block;
+    line-height: 1.25rem !important;
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+    background-image: url('../images/list-style-code.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-left: 1.70rem !important;
 }
