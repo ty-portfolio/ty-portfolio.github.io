@@ -13,11 +13,11 @@ nav > a > img {
     height: 1.875rem !important;
 }
 
-ul.skills-list {
+ul.portfolio-list {
     list-style-type: none;
 }
 
-ul.skills-list > li::before {
+ul.portfolio-list > li::before {
     content: '';
     display: inline-block;
     line-height: 1.25rem !important;
