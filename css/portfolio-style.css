@@ -41,3 +41,7 @@ ul.portfolio-list > li::before {
     background: linear-gradient(to bottom, rgb(105, 215, 250), rgb(0, 114, 177)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-color: rgb(0, 114, 177);
 }
+
+hr {
+    height: 2px !important;
+}
