@@ -49,17 +49,30 @@
             <form>
                 <div class="row">
                     <label for="name" class="col-lg-6 col-form-label">Name</label>
-                    <div class="col-lg-6 bg-light rounded">
-                        <input id="name" class="form-control-plaintext" type="text" placeholder="Your Name" required>
+                    <div class="col-lg-6 mb-2">
+                        <input id="name" class="form-control" type="text" placeholder="Your Name" required>
                     </div>
 
                     <label for="companyName" class="col-lg-6 col-form-label">Company</label>
-                    <div class="col-lg-6 bg-light rounded">
-                        <input id="companyName" class="form-control-plaintext" type="text" placeholder="Your Company Name" required>
+                    <div class="col-lg-6 mb-2">
+                        <input id="companyName" class="form-control" type="text" placeholder="Your Company Name" required>
+                    </div>
+
+                    <label for="contactMethod" class="col-lg-6 col-form-label">Contact Method</label>
+                    <div class="col-lg-6 mb-2">
+                        <div class="form-check d-inline-block">
+                            <input class="form-check-input" type="radio" name="contactMethod" id="contactMethodEmail" checked>
+                            <label class="form-check-label" for="contactMethodEmail">Email</label>
+                        </div>
+                        <div class="form-check d-inline-block">
+                            <input class="form-check-input" type="radio" name="contactMethod" id="contactMethodPhone">
+                            <label class="form-check-label" for="contactMethodPhone">Phone</label>
+                        </div>
                     </div>
                 </div>
 
-                <input class="btn bg-primary text-light" type="submit" value="Create Email">
+
+                <input class="btn bg-primary text-light mt-2" type="submit" value="Create Email">
             </form>
         </main>
          
