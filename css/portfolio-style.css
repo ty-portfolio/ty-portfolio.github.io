@@ -56,3 +56,18 @@ ul.portfolio-list > li::before {
 hr {
     height: 2px !important;
 }
+
+.contact-item {
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.contact-item > img {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
+
+.contact-item > span {
+    text-decoration: underline;
+}
