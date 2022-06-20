@@ -15,7 +15,7 @@
         <script src="js/contact.js"></script>
     </head>
     <body class="background-gradient px-5">
-        <header>
+        <header id="page-header">
             <!-- Responsive Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="index.html" class="navbar-brand fw-bold">
@@ -44,7 +44,7 @@
             </nav>
 
             <!-- Page Heading -->
-            <h1 class="pb-2 text-center fw-bold" id="page-heading">Contact Me</h1>
+            <h1 class="pb-2 text-center fw-bold">Contact Me</h1>
         </header>
 
         <main class="fs-5">
@@ -52,12 +52,12 @@
                 <div class="row">
                     <label for="name" class="col-lg-6 col-form-label">Name</label>
                     <div class="col-lg-6 mb-3">
-                        <input id="name" class="form-control fs-5" type="text" placeholder="Your Name" required>
+                        <input id="name" class="form-control" type="text" placeholder="Your Name" required>
                     </div>
 
                     <label for="companyName" class="col-lg-6 col-form-label">Company</label>
                     <div class="col-lg-6 mb-3">
-                        <input id="companyName" class="form-control fs-5" type="text" placeholder="Your Company Name" required>
+                        <input id="companyName" class="form-control" type="text" placeholder="Your Company Name" required>
                     </div>
 
                     <label class="col-lg-6 col-form-label">Contact Method</label>
@@ -74,17 +74,17 @@
 
                     <label id="contactInfoLabel" for="contactInfo" class="col-lg-6 col-form-label">Email Address</label>
                     <div class="col-lg-6 mb-3">
-                        <input id="contactInfo" class="form-control fs-5" type="email" placeholder="Your Email Address" required>
+                        <input id="contactInfo" class="form-control" type="email" placeholder="Your Email Address" required>
                     </div>
 
                     <label for="emailSubject" class="col-lg-6 col-form-label">Subject</label>
                     <div class="col-lg-6 mb-3">
-                        <input id="emailSubject" class="form-control fs-5" type="text" placeholder="Email Subject" required>
+                        <input id="emailSubject" class="form-control" type="text" placeholder="Email Subject" required>
                     </div>
                 </div>
 
                 <label for="emailMessage" class="col-form-label">Message</label>
-                <input id="emailMessage" class="form-control fs-5 mb-3" type="text">
+                <textarea id="emailMessage" class="form-control mb-3"></textarea>
 
                 <input class="btn bg-primary text-light mt-3" type="submit" value="Create Email">
             </form>
@@ -92,7 +92,7 @@
          
         <footer class="text-center">
             <hr>
-            <a href="#page-heading" class="text-secondary">Back To Top</a>
+            <a href="#page-header" class="text-secondary">Back To Top</a>
         </footer>
     </body>
 </html>
